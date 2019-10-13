@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+</head>
+<body>
+
+<script>
+
+    function kiem_tra_email(srt) {
+
+        pattern = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+        if (pattern.test(srt)) {
+            return true;
+        }
+        return false;
+    }
+
+    var email = "a@gmail.com";
+    console.log(kiem_tra_email(email));
+</script>
+</body>
+</html>
